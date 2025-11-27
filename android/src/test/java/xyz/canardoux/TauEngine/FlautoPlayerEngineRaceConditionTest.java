@@ -107,9 +107,6 @@ public class FlautoPlayerEngineRaceConditionTest {
         // Verify that at least some operations were skipped (stop was called)
         assertTrue("At least some operations should have been skipped",
                    skippedWrites.get() > 0);
-        
-        System.out.println("Successful writes: " + successfulWrites.get());
-        System.out.println("Skipped writes: " + skippedWrites.get());
     }
     
     /**
