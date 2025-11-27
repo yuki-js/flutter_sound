@@ -57,10 +57,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
     // -------------------------------------------------------------------------------------
-    // CAUTION: The following instruction is for developping and debugging the Flauto Engine
-    // DO NOT INCLUDE THE FOLLOWING LINE IN A REAL APP !!!
-    //implementation project(':flutter_sound_core')
-    implementation 'com.github.canardoux:flutter_sound_core:9.29.14'
+    // The TauEngine classes are now included locally in this package with the race condition fix
+    // for feedFromStream(). The external flutter_sound_core dependency is no longer needed.
+    // See: https://github.com/Canardoux/flutter_sound/issues/1123
     // -------------------------------------------------------------------------------------
 
 }
